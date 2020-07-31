@@ -157,28 +157,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>_OSI to XOSI</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>X09TSQ==</data>
-					<key>Replace</key>
-					<data>WE9TSQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>EPC:_STA to XSTA</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>X1NUQQ==</data>
-					<key>Replace</key>
-					<data>WFNUQQ==</data>
-					<key>TgtBridge</key>
-					<data>RVBDXw==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>_PTS to ZPTS(1,N)</string>
 					<key>Disabled</key>
 					<false/>
