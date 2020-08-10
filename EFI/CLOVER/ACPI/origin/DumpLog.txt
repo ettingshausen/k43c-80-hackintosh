@@ -1,84 +1,78 @@
-8:697  1:651  Found UEFI Acpi 2.0 RSDP at 7FFFE014
-8:697  0:000  Saving ACPI tables from RSDP 7FFFE014 to EFI\CLOVER\ACPI\origin ...
-8:697  0:000   7FFFE014: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
-8:708  0:010    (Xsdt: 7FFC5188, Rsdt: 7FFC50C4)
-8:708  0:000    7FFC5188: 'XSDT', 'CB-01', Rev: 1, Len: 284 -> XSDT.aml
-8:714  0:006    7FFC50C4: 'RSDT', 'CB-01', Rev: 1, Len: 160 -> RSDT.aml
-8:720  0:005    Tables in Xsdt: 31
-8:720  0:000    0. 7FFEC000: 'FACP', 'CB-01', Rev: 5, Len: 268 -> FACP.aml
-8:727  0:007        (Dsdt: 7FFCC000, Facs: 7FF33000, XDsdt: 7FFCC000, XFacs: 0)
-8:727  0:000        7FFCC000: 'DSDT', 'CB-01', Rev: 2, Len: 118504 -> DSDT.aml
-8:737  0:009        7FF33000: 'FACS', Ver: 2, Len: 64 -> FACS.aml
-8:743  0:006    1. 7FFFD000: 'UEFI', 'CB-01', Rev: 1, Len: 566 -> UEFI.aml
-8:749  0:006    2. 7FFFC000: 'UEFI', 'CB-01', Rev: 1, Len: 66 -> UEFI.aml
-8:759  0:010    3. 7FFFB000: 'MSDM', 'CB-01', Rev: 3, Len: 85 -> MSDM.aml
-8:766  0:006    4. 7FFF7000: 'SSDT', 'CB-01', Rev: 2, Len: 12832 -> SSDT-0-CB-01.aml
-8:774  0:007    5. 7FFF6000: 'SSDT', 'CB-01', Rev: 1, Len: 157 -> SSDT-1-CB-01.aml
-8:780  0:006    6. 7FFF1000: 'SSDT', 'CB-01', Rev: 2, Len: 18912 -> SSDT-2-CB-01.aml
-8:787  0:006    7. 7FFF0000: 'ASF!', 'CB-01', Rev: 32, Len: 165 -> ASF!.aml
-8:793  0:006    8. 7FFEF000: 'ASPT', 'CB-01', Rev: 7, Len: 52 -> ASPT.aml
-8:801  0:007    9. 7FFEE000: 'BOOT', 'CB-01', Rev: 1, Len: 40 -> BOOT.aml
-8:806  0:005    10. 7FFED000: 'DBGP', 'CB-01', Rev: 1, Len: 52 -> DBGP.aml
-8:812  0:005    11. 7FFEB000: 'HPET', 'CB-01', Rev: 1, Len: 56 -> HPET.aml
-8:818  0:005    12. 7FFEA000: 'APIC', 'CB-01', Rev: 3, Len: 300 -> APIC.aml
-8:824  0:005    13. 7FFE9000: 'MCFG', 'CB-01', Rev: 1, Len: 60 -> MCFG.aml
-8:830  0:005    14. 7FFCB000: 'SSDT', 'CB-01', Rev: 2, Len: 1303 -> SSDT-3-CB-01.aml
-8:836  0:005    15. 7FFCA000: 'SSDT', 'CB-01', Rev: 2, Len: 3727 -> SSDT-4-CB-01.aml
-8:842  0:005    16. 7FFC9000: 'LPIT', 'CB-01', Rev: 1, Len: 148 -> LPIT.aml
-8:848  0:005    17. 7FFC8000: 'WSMT', 'CB-01', Rev: 1, Len: 40 -> WSMT.aml
-8:854  0:005    18. 7FFC7000: 'SSDT', 'CB-01', Rev: 2, Len: 671 -> SSDT-5-CB-01.aml
-8:861  0:007    19. 7FFC6000: 'SSDT', 'CB-01', Rev: 1, Len: 838 -> SSDT-6-CB-01.aml
-8:867  0:006    20. 7FFC1000: 'SSDT', 'CB-01', Rev: 2, Len: 12290 -> SSDT-7-CB-01.aml
-8:873  0:006    21. 7FFC0000: 'SSDT', 'CB-01', Rev: 2, Len: 1310 -> SSDT-8-CB-01.aml
-8:880  0:007    22. 7FFBF000: 'DBGP', 'CB-01', Rev: 1, Len: 52 -> DBGP.aml
-8:890  0:009    23. 7FFBE000: 'DBG2', 'CB-01', Rev: 0, Len: 97 -> DBG2.aml
-8:896  0:006    24. 7FFBC000: 'SSDT', 'CB-01', Rev: 2, Len: 4315 -> SSDT-9-CB-01.aml
-8:903  0:006    25. 7FFBA000: 'SSDT', 'CB-01', Rev: 2, Len: 6062 -> SSDT-10-CB-01.aml (Found hidden SSDT 7 pcs)
-8:911  0:008        * 7EE2D018: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1419  53 53 44 54 8B 05 00 00 02 63 50 6D 52 65 66 00 Internal length = 1419 -> SSDT-x10_0-Cpu0Ist.aml
-8:917  0:006        * 7EE2C018: 'SSDT', 'ApIst', Rev: 2, Len: 3348  53 53 44 54 14 0D 00 00 02 2A 50 6D 52 65 66 00 Internal length = 3348 -> SSDT-x10_1-ApIst.aml
-8:923  0:005        * 7EE2D898: 'SSDT', 'Cpu0Cst', Rev: 2, Len: 1023  53 53 44 54 FF 03 00 00 02 11 50 6D 52 65 66 00 Internal length = 1023 -> SSDT-x10_2-Cpu0Cst.aml
-8:929  0:005        * 7EF58418: 'SSDT', 'ApCst', Rev: 2, Len: 778  53 53 44 54 0A 03 00 00 02 93 50 6D 52 65 66 00 Internal length = 778 -> SSDT-x10_3-ApCst.aml
-8:936  0:007        * 6F462DD8: 'SSDT', 'Cpu0Hwp', Rev: 2, Len: 186  53 53 44 54 BA 00 00 00 02 7D 50 6D 52 65 66 00 Internal length = 186 -> SSDT-x10_4-Cpu0Hwp.aml
-8:945  0:008        * 6F463018: 'SSDT', 'ApHwp', Rev: 2, Len: 791  53 53 44 54 17 03 00 00 02 80 50 6D 52 65 66 00 Internal length = 791 -> SSDT-x10_5-ApHwp.aml
-8:951  0:005        * 6F458558: 'SSDT', 'HwpLvt', Rev: 2, Len: 1576  53 53 44 54 28 06 00 00 02 85 50 6D 52 65 66 00 Internal length = 1576 -> SSDT-x10_6-HwpLvt.aml
-8:957  0:005  
-8:957  0:000    26. 7FFB9000: 'UEFI', 'CB-01', Rev: 1, Len: 1594 -> UEFI.aml
-8:967  0:010    27. 7FFB8000: 'UEFI', 'CB-01', Rev: 1, Len: 92 -> UEFI.aml
-8:977  0:010    28. 7FFB7000: 'DMAR', 'CB-01', Rev: 1, Len: 240 -> DMAR.aml
-8:983  0:005    29. 7FFB6000: 'FPDT', 'CB-01', Rev: 1, Len: 68 -> FPDT.aml
-8:989  0:005    30. 7FFB5000: 'BGRT', 'CB-01', Rev: 1, Len: 56 -> BGRT.aml
-8:994  0:005    Tables in Rsdt: 31
-8:994  0:000    0. 7FFEC000: 'FACP', 'CB-01', Rev: 5, Len: 268
-8:994  0:000        (Dsdt: 7FFCC000, Facs: 7FF33000, XDsdt: 7FFCC000, XFacs: 0)
-8:994  0:000        7FFCC000: 'DSDT', 'CB-01', Rev: 2, Len: 118504
-8:996  0:001        7FF33000: 'FACS', Ver: 2, Len: 64
-8:996  0:000    1. 7FFFD000: 'UEFI', 'CB-01', Rev: 1, Len: 566
-8:996  0:000    2. 7FFFC000: 'UEFI', 'CB-01', Rev: 1, Len: 66
-8:996  0:000    3. 7FFFB000: 'MSDM', 'CB-01', Rev: 3, Len: 85
-8:996  0:000    4. 7FFF7000: 'SSDT', 'CB-01', Rev: 2, Len: 12832
-8:996  0:000    5. 7FFF6000: 'SSDT', 'CB-01', Rev: 1, Len: 157
-8:996  0:000    6. 7FFF1000: 'SSDT', 'CB-01', Rev: 2, Len: 18912
-8:996  0:000    7. 7FFF0000: 'ASF!', 'CB-01', Rev: 32, Len: 165
-8:996  0:000    8. 7FFEF000: 'ASPT', 'CB-01', Rev: 7, Len: 52
-8:996  0:000    9. 7FFEE000: 'BOOT', 'CB-01', Rev: 1, Len: 40
-8:996  0:000    10. 7FFED000: 'DBGP', 'CB-01', Rev: 1, Len: 52
-8:996  0:000    11. 7FFEB000: 'HPET', 'CB-01', Rev: 1, Len: 56
-8:996  0:000    12. 7FFEA000: 'APIC', 'CB-01', Rev: 3, Len: 300
-8:996  0:000    13. 7FFE9000: 'MCFG', 'CB-01', Rev: 1, Len: 60
-8:996  0:000    14. 7FFCB000: 'SSDT', 'CB-01', Rev: 2, Len: 1303
-8:996  0:000    15. 7FFCA000: 'SSDT', 'CB-01', Rev: 2, Len: 3727
-8:996  0:000    16. 7FFC9000: 'LPIT', 'CB-01', Rev: 1, Len: 148
-8:996  0:000    17. 7FFC8000: 'WSMT', 'CB-01', Rev: 1, Len: 40
-8:996  0:000    18. 7FFC7000: 'SSDT', 'CB-01', Rev: 2, Len: 671
-8:996  0:000    19. 7FFC6000: 'SSDT', 'CB-01', Rev: 1, Len: 838
-8:996  0:000    20. 7FFC1000: 'SSDT', 'CB-01', Rev: 2, Len: 12290
-8:996  0:000    21. 7FFC0000: 'SSDT', 'CB-01', Rev: 2, Len: 1310
-8:996  0:000    22. 7FFBF000: 'DBGP', 'CB-01', Rev: 1, Len: 52
-8:996  0:000    23. 7FFBE000: 'DBG2', 'CB-01', Rev: 0, Len: 97
-8:996  0:000    24. 7FFBC000: 'SSDT', 'CB-01', Rev: 2, Len: 4315
-8:996  0:000    25. 7FFBA000: 'SSDT', 'CB-01', Rev: 2, Len: 6062
-8:996  0:000    26. 7FFB9000: 'UEFI', 'CB-01', Rev: 1, Len: 1594
-8:996  0:000    27. 7FFB8000: 'UEFI', 'CB-01', Rev: 1, Len: 92
-8:996  0:000    28. 7FFB7000: 'DMAR', 'CB-01', Rev: 1, Len: 240
-8:996  0:000    29. 7FFB6000: 'FPDT', 'CB-01', Rev: 1, Len: 68
-8:996  0:000    30. 7FFB5000: 'BGRT', 'CB-01', Rev: 1, Len: 56
+10:348  5:037  Found UEFI Acpi 2.0 RSDP at %p
+10:348  0:000  Saving ACPI tables from RSDP %p to Âçí‚ÅÑÂëê‚Åí‰≤≠‰πÖÂôè…è‚ÉÑÁøº$ ...
+10:348  0:000   %p: 'RSD PTR ≠LENOVOƒ ¸$', Rev: 1710715639 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+10:352  0:004    (Xsdt: %p, Rsdt: %p)
+10:352  0:000    %p: 'XSDT', 'XSDT', Rev: 1710715463, Len: 1 -> XSDT.aml
+10:356  0:003    %p: 'RSDTî', 'RSDT', Rev: 1710715463, Len: 1 -> RSDT.aml
+10:359  0:003    Tables in Xsdt: 28
+10:359  0:000    0. %p: 'FACP', 'FACP', Rev: 1710715463, Len: 5 -> FACP.aml
+10:362  0:003        (Dsdt: 7FFCD000, Facs: 7FF33000, XDsdt: 7ffcd000, XFacs: 0)
+10:362  0:000        %p: 'DSDTËŒ', 'DSDT', Rev: 1710715319, Len: 2 -> DSDT.aml
+10:367  0:004        %p: 'FACS@', Ver: 1710715483, Len: 2 -> FACS.aml
+10:371  0:003    1. %p: 'UEFI6', 'UEFI', Rev: 1710715463, Len: 1 -> UEFI.aml
+10:374  0:003    2. %p: 'UEFIB', 'UEFI', Rev: 1710715463, Len: 1 -> UEFI.aml
+10:379  0:005    3. %p: 'MSDMU', 'MSDM', Rev: 1710715463, Len: 3 -> MSDM.aml
+10:383  0:003    4. %p: 'SSDT 2', 'SSDT', Rev: 1710715463, Len: 2 -> SSDT-0-CB-01.aml
+10:389  0:006    5. %p: 'SSDT‡I', 'SSDT', Rev: 1710715463, Len: 2 -> SSDT-1-CB-01.aml
+10:396  0:007    6. %p: 'ASF!•', 'ASF!', Rev: 1710715463, Len: 32 -> ASF!.aml
+10:399  0:003    7. %p: 'ASPT4', 'ASPT', Rev: 1710715463, Len: 7 -> ASPT.aml
+10:402  0:003    8. %p: 'BOOT(', 'BOOT', Rev: 1710715463, Len: 1 -> BOOT.aml
+10:406  0:003    9. %p: 'DBGP4', 'DBGP', Rev: 1710715463, Len: 1 -> DBGP.aml
+10:409  0:003    10. %p: 'HPET8', 'HPET', Rev: 1710715463, Len: 1 -> HPET.aml
+10:412  0:003    11. %p: 'APIC,', 'APIC', Rev: 1710715463, Len: 3 -> APIC.aml
+10:415  0:003    12. %p: 'MCFG<', 'MCFG', Rev: 1710715463, Len: 1 -> MCFG.aml
+10:419  0:003    13. %p: 'SSDT', 'SSDT', Rev: 1710715463, Len: 2 -> SSDT-2-CB-01.aml
+10:422  0:003    14. %p: 'SSDTè', 'SSDT', Rev: 1710715463, Len: 2 -> SSDT-3-CB-01.aml
+10:425  0:003    15. %p: 'LPITî', 'LPIT', Rev: 1710715463, Len: 1 -> LPIT.aml
+10:428  0:003    16. %p: 'WSMT(', 'WSMT', Rev: 1710715463, Len: 1 -> WSMT.aml
+10:432  0:003    17. %p: 'SSDTü', 'SSDT', Rev: 1710715463, Len: 2 -> SSDT-4-CB-01.aml
+10:435  0:003    18. %p: 'SSDTF', 'SSDT', Rev: 1710715463, Len: 1 -> SSDT-5-CB-01.aml
+10:438  0:003    19. %p: 'SSDT0', 'SSDT', Rev: 1710715463, Len: 2 -> SSDT-6-CB-01.aml
+10:441  0:003    20. %p: 'SSDT', 'SSDT', Rev: 1710715463, Len: 2 -> SSDT-7-CB-01.aml
+10:445  0:003    21. %p: 'DBGP4', 'DBGP', Rev: 1710715463, Len: 1 -> DBGP.aml
+10:449  0:004    22. %p: 'DBG2a', 'DBG2', Rev: 1710715463, Len: 0 -> DBG2.aml
+10:452  0:003    23. %p: 'SSDT€', 'SSDT', Rev: 1710715463, Len: 2 -> SSDT-8-CB-01.aml
+10:456  0:003    24. %p: 'SSDTÆ', 'SSDT', Rev: 1710715463, Len: 2 -> SSDT-9-CB-01.aml (Found hidden SSDT 7 pcs)
+10:459  0:003        * 2128793624: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1419  53 53 44 54 8B 05 00 00 02 63 50 6D 52 65 66 00 Internal length = 1419 -> SSDT-x9_0-Cpu0Ist.aml
+10:463  0:003        * 2128789528: 'SSDT', 'ApIst', Rev: 2, Len: 3348  53 53 44 54 14 0D 00 00 02 2A 50 6D 52 65 66 00 Internal length = 3348 -> SSDT-x9_1-ApIst.aml
+10:466  0:003        * 2128795800: 'SSDT', 'Cpu0Cst', Rev: 2, Len: 1023  53 53 44 54 FF 03 00 00 02 11 50 6D 52 65 66 00 Internal length = 1023 -> SSDT-x9_2-Cpu0Cst.aml
+10:469  0:003        * 2130019352: 'SSDT', 'ApCst', Rev: 2, Len: 778  53 53 44 54 0A 03 00 00 02 93 50 6D 52 65 66 00 Internal length = 778 -> SSDT-x9_3-ApCst.aml
+10:472  0:003        * 1866841560: 'SSDT', 'Cpu0Hwp', Rev: 2, Len: 186  53 53 44 54 BA 00 00 00 02 7D 50 6D 52 65 66 00 Internal length = 186 -> SSDT-x9_4-Cpu0Hwp.aml
+10:476  0:003        * 1866847192: 'SSDT', 'ApHwp', Rev: 2, Len: 791  53 53 44 54 17 03 00 00 02 80 50 6D 52 65 66 00 Internal length = 791 -> SSDT-x9_5-ApHwp.aml
+10:479  0:003        * 1866831192: 'SSDT', 'HwpLvt', Rev: 2, Len: 1576  53 53 44 54 28 06 00 00 02 85 50 6D 52 65 66 00 Internal length = 1576 -> SSDT-x9_6-HwpLvt.aml
+10:482  0:003  
+10:482  0:000    25. %p: 'DMAR', 'DMAR', Rev: 1710715463, Len: 1 -> DMAR.aml
+10:485  0:003    26. %p: 'FPDTD', 'FPDT', Rev: 1710715463, Len: 1 -> FPDT.aml
+10:489  0:003    27. %p: 'BGRT8', 'BGRT', Rev: 1710715463, Len: 1 -> BGRT.aml
+10:492  0:003    Tables in Rsdt: 28
+10:492  0:000    0. %p: 'FACP', 'FACP', Rev: 1710715463, Len: 5
+10:492  0:000        (Dsdt: 7FFCD000, Facs: 7FF33000, XDsdt: 7ffcd000, XFacs: 0)
+10:492  0:000        %p: 'DSDTËŒ', 'DSDT', Rev: 1710715319, Len: 2
+10:493  0:001        %p: 'FACS@', Ver: 1710715483, Len: 2
+10:493  0:000    1. %p: 'UEFI6', 'UEFI', Rev: 1710715463, Len: 1
+10:493  0:000    2. %p: 'UEFIB', 'UEFI', Rev: 1710715463, Len: 1
+10:493  0:000    3. %p: 'MSDMU', 'MSDM', Rev: 1710715463, Len: 3
+10:493  0:000    4. %p: 'SSDT 2', 'SSDT', Rev: 1710715463, Len: 2
+10:493  0:000    5. %p: 'SSDT‡I', 'SSDT', Rev: 1710715463, Len: 2
+10:493  0:000    6. %p: 'ASF!•', 'ASF!', Rev: 1710715463, Len: 32
+10:493  0:000    7. %p: 'ASPT4', 'ASPT', Rev: 1710715463, Len: 7
+10:493  0:000    8. %p: 'BOOT(', 'BOOT', Rev: 1710715463, Len: 1
+10:493  0:000    9. %p: 'DBGP4', 'DBGP', Rev: 1710715463, Len: 1
+10:493  0:000    10. %p: 'HPET8', 'HPET', Rev: 1710715463, Len: 1
+10:493  0:000    11. %p: 'APIC,', 'APIC', Rev: 1710715463, Len: 3
+10:493  0:000    12. %p: 'MCFG<', 'MCFG', Rev: 1710715463, Len: 1
+10:493  0:000    13. %p: 'SSDT', 'SSDT', Rev: 1710715463, Len: 2
+10:493  0:000    14. %p: 'SSDTè', 'SSDT', Rev: 1710715463, Len: 2
+10:493  0:000    15. %p: 'LPITî', 'LPIT', Rev: 1710715463, Len: 1
+10:493  0:000    16. %p: 'WSMT(', 'WSMT', Rev: 1710715463, Len: 1
+10:493  0:000    17. %p: 'SSDTü', 'SSDT', Rev: 1710715463, Len: 2
+10:493  0:000    18. %p: 'SSDTF', 'SSDT', Rev: 1710715463, Len: 1
+10:493  0:000    19. %p: 'SSDT0', 'SSDT', Rev: 1710715463, Len: 2
+10:493  0:000    20. %p: 'SSDT', 'SSDT', Rev: 1710715463, Len: 2
+10:493  0:000    21. %p: 'DBGP4', 'DBGP', Rev: 1710715463, Len: 1
+10:493  0:000    22. %p: 'DBG2a', 'DBG2', Rev: 1710715463, Len: 0
+10:493  0:000    23. %p: 'SSDT€', 'SSDT', Rev: 1710715463, Len: 2
+10:493  0:000    24. %p: 'SSDTÆ', 'SSDT', Rev: 1710715463, Len: 2
+10:493  0:000    25. %p: 'DMAR', 'DMAR', Rev: 1710715463, Len: 1
+10:493  0:000    26. %p: 'FPDTD', 'FPDT', Rev: 1710715463, Len: 1
+10:493  0:000    27. %p: 'BGRT8', 'BGRT', Rev: 1710715463, Len: 1
