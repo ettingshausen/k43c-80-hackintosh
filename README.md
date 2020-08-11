@@ -11,4 +11,15 @@ Clover configuration for Lenovo zhaoyang k43c-80
 | SSD      | Samsung 970 EVO Plus 500G  |      |
 | HDD      | Seagate ST1000LM035-1RK172 |      |
 | WLAN     |          DW1820a           |      |
-| TouchPad |          ~~AUI165B~~ ELAN0612           |   I bought a ELAN online and replaced the ALPS one    |
+| TouchPad |          ~~AUI165B~~ ELAN0612           |   I bought a ELAN online and replaced the ALPS one    |. 
+
+
+# What is working
+---
+- [x] Battery display
+- [x] TouchPad 100% working
+- [x] Sound
+- [x] WiFi & Bluetooth
+- [x] Airdrop & Handoff
+- [x] Sidecar
+- [x] HDMI
