@@ -22,6 +22,7 @@ Clover configuration for Lenovo zhaoyang k43c-80
 - [x] Airdrop & Handoff
 - [x] Sidecar
 - [x] HDMI
+- [x] SDCardReader
 - [x] <kbd>Fn</kbd> + <kbd>F1</kbd>  &nbsp;&nbsp;  Mute or unmute
 - [x] <kbd>Fn</kbd> + <kbd>F2</kbd>  &nbsp;&nbsp;  Decrease the speaker volume
 - [x] <kbd>Fn</kbd> + <kbd>F3</kbd>  &nbsp;&nbsp;  Increase the speaker volume
