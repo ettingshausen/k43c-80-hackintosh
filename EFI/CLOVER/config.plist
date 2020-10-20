@@ -186,6 +186,16 @@
 					<key>Comment</key>
 					<string>change EHC2 to EH02</string>
 				</dict>
+				<dict>
+					<key>Find</key>
+					<data>R1BSVwI=</data>
+					<key>Replace</key>
+					<data>WFBSVwI=</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>GPRW to XPRW</string>
+				</dict>
 			</array>
 			<key>Fixes</key>
 			<dict>
