@@ -266,7 +266,7 @@
 		<key>Debug</key>
 		<false/>
 		<key>Arguments</key>
-		<string>-v dart=0 brcmfx-country=#a brcmfx-driver=1 bpr_probedelay=100 bpr_initialdelay=300 bpr_postresetdelay=300</string>
+		<string>-v dart=0 brcmfx-country=#a bpr_probedelay=100 bpr_initialdelay=300 bpr_postresetdelay=300</string>
 		<key>XMPDetection</key>
 		<false/>
 		<key>Timeout</key>
