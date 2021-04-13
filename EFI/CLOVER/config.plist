@@ -37,46 +37,6 @@
 			<array>
 				<dict>
 					<key>Comment</key>
-					<string>_Q11 to XQ11(lenAir/IKB/IKBR/IWL-down)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>X1ExMQ==</data>
-					<key>Replace</key>
-					<data>WFExMQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>_Q12 to XQ12(lenAir/IKB/IKBR/IWL-up)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>X1ExMg==</data>
-					<key>Replace</key>
-					<data>WFExMg==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>XHCI to XHC</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>WEhDSQ==</data>
-					<key>Replace</key>
-					<data>WEhDXw==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>XHC1 to XHC</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>WEhDMQ==</data>
-					<key>Replace</key>
-					<data>WEhDXw==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>GPRW to XPRW</string>
 					<key>Disabled</key>
 					<false/>
@@ -136,7 +96,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>-v dart=0 brcmfx-country=#a bpr_probedelay=100 bpr_initialdelay=300 bpr_postresetdelay=300</string>
+		<string>-v dart=0 brcmfx-country=#a bpr_probedelay=100 bpr_initialdelay=300 bpr_postresetdelay=300 brcmfx-aspm</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -172,21 +132,6 @@
 		</dict>
 		<key>Properties</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x1C,0x5)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>WLAN</string>
-				<key>compatible</key>
-				<string>pci14e4,43a0</string>
-				<key>device_type</key>
-				<string>Airport Extreme</string>
-				<key>model</key>
-				<string>DW1820A (BCM4350) 802.11ac Wireless</string>
-				<key>name</key>
-				<string>Airport</string>
-				<key>pci-aspm-default</key>
-				<integer>0</integer>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
