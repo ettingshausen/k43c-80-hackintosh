@@ -1,5 +1,5 @@
 # k43c-80-hackintosh
-Clover configuration for Lenovo zhaoyang k43c-80
+OpenCore configuration for Lenovo zhaoyang k43c-80
 
 
 
@@ -32,6 +32,9 @@ Clover configuration for Lenovo zhaoyang k43c-80
 - [x] <kbd>PrtSc</kbd> => <kbd>F13</kbd>
 # Screenshots
 <img width="698" alt="Screen Shot 2020-08-11 at 11 43 23 PM" src="https://user-images.githubusercontent.com/9806325/120961092-b4a69980-c78f-11eb-9601-d20836b02ca7.png">
+
+<img width="780" alt="Screen Shot 2020-08-11 at 11 43 23 PM" src="https://user-images.githubusercontent.com/9806325/138911103-aefeeba1-619a-451d-82f9-e640a032ac02.png">
+
 <img width="780" alt="Screen Shot 2020-08-11 at 11 42 00 PM" src="https://user-images.githubusercontent.com/9806325/89919028-5a02e680-dc2d-11ea-83af-c4b8af8114a7.png">
 <img width="698" alt="Screen Shot 2020-08-11 at 11 39 14 PM" src="https://user-images.githubusercontent.com/9806325/89918529-b9142b80-dc2c-11ea-9c9f-3490917970eb.png">
 <img width="780" alt="Screen Shot 2020-08-11 at 11 39 32 PM" src="https://user-images.githubusercontent.com/9806325/89918764-05f80200-dc2d-11ea-9938-2c728c0ca6d2.png">
